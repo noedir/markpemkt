@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'xpto11',
-	'database' => 'markp_emkt',
+	'hostname' => 'mysql873.umbler.com',
+	'username' => 'markpemkt',
+	'password' => 'casimu11',
+	'database' => 'markp',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
