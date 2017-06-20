@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	#Remove o acesso a pasta system
+	RewriteCond %{REQUEST_URI} ^system.*
+
+	#Redireciona /index.php/nomedocontroller/ to /nomedocontroller/fun��o/
+	RewriteRule ^(.*)$ index.php/$1 [L]
+
+	#se o arquivo n�o existir (um css ou javascript por exemplo)
+	#ele redireciona para o index.php
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
